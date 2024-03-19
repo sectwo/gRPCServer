@@ -43,6 +43,8 @@ func NewGRPCServer(cfg *config.Config) error {
 		}()
 
 	}
+
+	return nil
 }
 
 func (s *GRPCServer) CreateAuth(_ context.Context, req *auth.CreateTokenReq) (*auth.CreateTokenRes, error) {
